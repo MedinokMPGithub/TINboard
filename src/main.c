@@ -43,6 +43,7 @@ int main ( void )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
+        GPIO1_LV_Set();
     }
 
     /* Execution should not come here during normal operation */
