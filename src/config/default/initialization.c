@@ -72,7 +72,7 @@
 #pragma config CP =         OFF
 
 /*** DEVCFG1 ***/
-#pragma config FNOSC =      POSC
+#pragma config FNOSC =      SPLL
 #pragma config DMTINTV =    WIN_127_128
 #pragma config FSOSCEN =    OFF
 #pragma config IESO =       OFF
@@ -165,12 +165,18 @@ void SYS_Initialize ( void* data )
     CFGCONbits.ECCCON = 3;
 
 
+	UART1_Initialize();
+
+    TMR2_Initialize();
+
 
 
 
 
     EVIC_Initialize();
 
+	/* Enable global interrupts */
+    __builtin_enable_interrupts();
 
 
 }
