@@ -1,6 +1,6 @@
-build/default/production/_ext/1360937237/main.o:  \
-../src/main.c  \
- ../src/config/default/definitions.h  \
+build/default/debug/_ext/1171490990/exceptions.o:  \
+ ../src/config/default/exceptions.c  \
+../src/config/default/definitions.h  \
  ../src/config/default/peripheral/uart/plib_uart1.h  \
  ../src/packs/PIC32MZ2048EFM144_DFP/device.h  \
  ../src/config/default/toolchain_specifics.h  \
